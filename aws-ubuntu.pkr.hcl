@@ -10,7 +10,7 @@ packer {
 source "amazon-ebs" "ubuntu" {
   ami_name      = "ubuntu-linux-aws"
   instance_type = "t2.micro"
-  region        = "us-west-1"
+  region        = "us-east-1"
   source_ami_filter {
     filters = {
       name                = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20210430"
@@ -51,7 +51,7 @@ build {
     inline = ["echo This provisioner runs last"]
   }
   provisioner "file" {
-    source = "bhagi.txt"
-    destination = "/tmp/bhagi.txt"
+    source = "aws_credentials"
+    destination = "/var/jenkins_home/aws_credentials"
   }
 }
