@@ -1,6 +1,6 @@
 terraform {
     backend "s3" {
-    bucket = "terraformbhagi"
+    bucket = "terraforminfracode"
     key    = "terraform_Iac.tfstate"
     region = "us-east-1"
   }

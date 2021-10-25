@@ -18,6 +18,7 @@ variable "cidr_blocks" {
     description = "subnet ip range in cidr block"
     default = ["0.0.0.0/0"]
 }
+
 variable "region" {
     description = "aws region"
     default = "us-east-1"
