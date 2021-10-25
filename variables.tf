@@ -1,6 +1,6 @@
 variable "linux_ami_id" {
     description = "ami id of the linux machine"
-    default = "ami-004c580e7259933af"
+    default = "ami-0598022403848c051"
 }
 variable "ssh_key" {
     description = "user ssh public key"
@@ -8,11 +8,11 @@ variable "ssh_key" {
 }
 variable "vpc_id" {
     description = "vpc_id under which the resource group will create"
-    default = "vpc-a6d021c0"
+    default = "vpc-06d9c1d3ecf203e11"
 }
 variable "subnet" {
     description = "subnet id of the vpc"
-    default = "subnet-6e40e008"
+    default = "	subnet-0c1622b82b3c369e3"
 }
 variable "cidr_blocks" {
     description = "subnet ip range in cidr block"
@@ -20,7 +20,7 @@ variable "cidr_blocks" {
 }
 variable "region" {
     description = "aws region"
-    default = "us-west-1"
+    default = "us-east-1"
 }
 variable "volume_type" {
     description = "type of the storage"
